@@ -1,0 +1,16 @@
+<html>
+<head>
+<title> Test example </title>
+</head>
+<body>
+<tw-storydata name="Test example" startnode="1" creator="Me" creator-version="1.0" ifid="00000000-0000-0000-0000-000000000000" format="Harlowe" options="" hidden>
+
+<tw-passagedata pid="1" name="start" tags="" position="200,100">(set: $debug to false)(set: $facebook to false)Your big project in COP 3331 is due tomorrow.  Do you [[start debugging]], [[log onto Facebook]], or [[watch Netflix]]?</tw-passagedata>
+<tw-passagedata pid="2" name="start debugging" tags="" position="100,200">(set: $debug to true) You work late into the night, but you think you have the code working before the [[deadline]].</tw-passagedata>
+<tw-passagedata pid="3" name="log onto Facebook" tags="" position="200,200">(set:  $facebook to true) Your friend posted yet another picture of food, and you got friend requests from two people you've never met.   You make a post about how lame school projects are and start cyberstalking someone cute you saw the other day.  Before you know it, you've missed the [[deadline]] for submitting your project!</tw-passagedata>
+<tw-passagedata pid="4" name="watch Netflix" tags="" position="300,200">There's an amazing new crime drama on.  In fact, it's so good that you find yourself watching an entire season, and the next thing you know, sunlight is streaming in through the window--it's already morning, way past the [[deadline]] for turning in your project!  Maybe you can get an extension? </tw-passagedata>
+<tw-passagedata pid="5" name="deadline" tags="" position="200,300">(if: $debug is true)[When you get your grade back, you smile smugly--an A+!](else:)[You missed the due date and got an F.  Lame.  (if: $facebook is true)[At least your friends took you out to cheer you up.]]</tw-passagedata>
+</tw-storydata>
+
+</body>
+</html>
